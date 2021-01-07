@@ -25,6 +25,10 @@ class Blog(models.Model):
 class Instructor(models.Model):
         name = models.CharField(max_length=20, default="")
         fathers_name = models.CharField(max_length=20, default="")
+        mobile = models.IntegerField(max_length=12,default="")
+        email = models.EmailField(default="")
+        #dob = models.DateField(default='')
+        location = models.CharField(max_length=100, default="")
         aadhar = models.IntegerField(default='0')
         address = models.CharField(max_length=20, default="")
         experiance = models.CharField(max_length=20, default="")
@@ -54,7 +58,7 @@ class User(models.Model):
         return self.name
 class Upcommingevent(models.Model):
     name = models.CharField(max_length=50,default="")
-    date = models.DateField()
+    #date = models.DateField()
     description = models.CharField(max_length=200)
     image = models.ImageField(upload_to="yogbookingapp/images")
     id = models.CharField(max_length=30,primary_key = True)

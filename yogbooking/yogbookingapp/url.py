@@ -21,4 +21,5 @@ urlpatterns = [
     path('parkyoga',views.parkyoga,name="parkyoga"),
     path('kidyoga',views.kidyoga,name="kidyoga"),
 
+
 ]
